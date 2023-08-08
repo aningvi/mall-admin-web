@@ -24,6 +24,7 @@ export const constantRouterMap = [
   {
     path: '',
     component: Layout,
+    redirect: '/home',
     children: [{
       path: 'home',
       name: 'home',
@@ -42,28 +43,28 @@ export const asyncRouterMap = [
       {
         path: 'device',
         name: 'device',
-        component: () => import('@/views/sms/coupon/index'),
+        component: () => import('@/views/bms/device/index'),
         meta: {title: '设备管理', icon: 'sms-coupon'}
       },
       {
-        path: 'addCoupon',
-        name: 'addCoupon',
-        component: () => import('@/views/sms/coupon/add'),
-        meta: {title: '添加优惠券'},
+        path: 'addDevice',
+        name: 'addDevice',
+        component: () => import('@/views/bms/device/add'),
+        meta: {title: '添加设备'},
         hidden:true
       },
       {
-        path: 'updateCoupon',
-        name: 'updateCoupon',
-        component: () => import('@/views/sms/coupon/update'),
-        meta: {title: '修改优惠券'},
+        path: 'updateDevice',
+        name: 'updateDevice',
+        component: () => import('@/views/bms/device/update'),
+        meta: {title: '修改设备'},
         hidden:true
       },
       {
-        path: 'couponHistory',
-        name: 'couponHistory',
-        component: () => import('@/views/sms/coupon/history'),
-        meta: {title: '优惠券领取详情'},
+        path: 'deviceHistory',
+        name: 'deviceHistory',
+        component: () => import('@/views/bms/device/history'),
+        meta: {title: '查看详情'},
         hidden:true
       }]
   },
