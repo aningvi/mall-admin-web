@@ -198,7 +198,7 @@
         this.$router.push({path: '/device/deviceDetail', query: {id: row.id}})
       },
       handleUpdate(index, row) {
-        this.$router.push({path: '/sms/updateDevice', query: {id: row.id}})
+        this.$router.push({path: '/device/updateDevice', query: {id: row.id}})
       },
       handleDelete(index, row) {
         this.$confirm('是否进行删除操作?', '提示', {
