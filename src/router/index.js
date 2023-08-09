@@ -75,28 +75,28 @@ export const asyncRouterMap = [
       {
         path: 'fitting',
         name: 'fitting',
-        component: () => import('@/views/sms/coupon/index'),
+        component: () => import('@/views/bms/fitting/index'),
         meta: {title: '配件管理', icon: 'sms-subject'}
       },
       {
-        path: 'addCoupon',
-        name: 'addCoupon',
-        component: () => import('@/views/sms/coupon/add'),
-        meta: {title: '添加优惠券'},
+        path: 'addFitting',
+        name: 'addFitting',
+        component: () => import('@/views/bms/fitting/add'),
+        meta: {title: '添加配件'},
         hidden:true
       },
       {
-        path: 'updateCoupon',
-        name: 'updateCoupon',
-        component: () => import('@/views/sms/coupon/update'),
-        meta: {title: '修改优惠券'},
+        path: 'updateFitting',
+        name: 'updateFitting',
+        component: () => import('@/views/bms/fitting/update'),
+        meta: {title: '修改配件'},
         hidden:true
       },
       {
-        path: 'couponHistory',
-        name: 'couponHistory',
-        component: () => import('@/views/sms/coupon/history'),
-        meta: {title: '优惠券领取详情'},
+        path: 'fittingDetail',
+        name: 'fittingDetail',
+        component: () => import('@/views/bms/fitting/detail'),
+        meta: {title: '配件详情'},
         hidden:true
       }]
   },
