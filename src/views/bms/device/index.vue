@@ -195,7 +195,7 @@
         this.$router.push({path: '/device/addDevice'})
       },
       handleView(index, row) {
-        this.$router.push({path: '/sms/deviceHistory', query: {id: row.id}})
+        this.$router.push({path: '/device/deviceDetail', query: {id: row.id}})
       },
       handleUpdate(index, row) {
         this.$router.push({path: '/sms/updateDevice', query: {id: row.id}})
@@ -217,8 +217,6 @@
       },
       getList(){
         this.listLoading=true;
-        debugger
-        console.log(this.listQuery)
         fetchList(this.listQuery).then(response=>{
           this.listLoading = false;
           this.list = response.data.list;

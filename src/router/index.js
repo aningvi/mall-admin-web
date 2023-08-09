@@ -61,9 +61,9 @@ export const asyncRouterMap = [
         hidden:true
       },
       {
-        path: 'deviceHistory',
-        name: 'deviceHistory',
-        component: () => import('@/views/bms/device/history'),
+        path: 'deviceDetail',
+        name: 'deviceDetail',
+        component: () => import('@/views/bms/device/detail'),
         meta: {title: '查看详情'},
         hidden:true
       }]

@@ -36,3 +36,10 @@ export function deleteDevice(id) {
     method:'post',
   })
 }
+
+export function getFittingList(id) {
+  return request({
+    url:'/device/listFitting/'+id,
+    method:'get',
+  })
+}
