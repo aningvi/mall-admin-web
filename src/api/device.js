@@ -22,6 +22,13 @@ export function getDevice(id) {
   })
 }
 
+export function getList() {
+  return request({
+    url:'/device/listAll',
+    method:'get',
+  })
+}
+
 export function updateDevice(id,data) {
   return request({
     url:'/device/update/'+id,

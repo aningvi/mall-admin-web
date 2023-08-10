@@ -107,28 +107,28 @@ export const asyncRouterMap = [
       {
         path: 'maintain',
         name: 'maintain',
-        component: () => import('@/views/sms/coupon/index'),
+        component: () => import('@/views/bms/maintain/index'),
         meta: {title: '维修管理', icon: 'sms-subject'}
       },
       {
-        path: 'addCoupon',
-        name: 'addCoupon',
-        component: () => import('@/views/sms/coupon/add'),
-        meta: {title: '添加优惠券'},
+        path: 'addMaintain',
+        name: 'addMaintain',
+        component: () => import('@/views/bms/maintain/add'),
+        meta: {title: '添加维修单'},
         hidden:true
       },
       {
-        path: 'updateCoupon',
-        name: 'updateCoupon',
-        component: () => import('@/views/sms/coupon/update'),
-        meta: {title: '修改优惠券'},
+        path: 'updateMaintain',
+        name: 'updateMaintain',
+        component: () => import('@/views/bms/maintain/update'),
+        meta: {title: '修改维修单'},
         hidden:true
       },
       {
-        path: 'couponHistory',
-        name: 'couponHistory',
-        component: () => import('@/views/sms/coupon/history'),
-        meta: {title: '优惠券领取详情'},
+        path: 'maintainHistory',
+        name: 'maintainHistory',
+        component: () => import('@/views/bms/maintain/detail'),
+        meta: {title: '维修单详情'},
         hidden:true
       }]
   },
